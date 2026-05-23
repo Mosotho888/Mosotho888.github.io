@@ -3,181 +3,233 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tebogo Mofokeng - Backend Developer specialising in Java, Spring Boot, and Oracle Cloud Infrastructure. Based in Johannesburg, South Africa.">
-  <title>Tebogo Mofokeng — Backend Developer</title>
+  <meta name="description" content="Tebogo Mofokeng - Backend Developer specialising in Java, Spring Boot and Oracle Cloud. Based in Johannesburg, South Africa.">
+  <title>Tebogo Mofokeng · Backend Developer</title>
  
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=Geist+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Satoshi:wght@300;400;500&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Fallback for Cabinet Grotesk (Fontshare) -->
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800,900&f[]=satoshi@300,400,500&display=swap" rel="stylesheet">
  
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
  
-  <div class="noise"></div>
+  <!-- Mesh background -->
+  <div class="mesh" aria-hidden="true">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+ 
+  <!-- Cursor -->
   <div id="cursor"></div>
-  <div id="cursor-ring"></div>
+  <div id="cursor-glow"></div>
  
   <!-- ── NAV ── -->
   <nav>
-    <span class="nav-logo">TGM</span>
+    <span class="nav-logo">tgm<span>@dev</span></span>
     <ul class="nav-links">
-      <li><a href="#hero">About</a></li>
-      <li><a href="#certs">Certifications</a></li>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#certs">Certs</a></li>
       <li><a href="#stack">Stack</a></li>
       <li><a href="#project">Projects</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="nav-dot" title="Available for hire"></div>
+    <div class="nav-pill">
+      <div class="pulse"></div>
+      Available for hire
+    </div>
   </nav>
  
   <!-- ── HERO ── -->
-  <div class="hero" id="hero">
-    <div class="hero-left">
-      <span class="hero-number">01 / 06</span>
-      <div class="hero-eyebrow">Backend Developer · Johannesburg, SA</div>
-      <h1 class="hero-name">Tebogo</h1>
-      <h1 class="hero-name-last">Mofokeng</h1>
-      <p class="hero-title">Java · Spring Boot · Oracle Cloud</p>
-      <div class="hero-ctas">
-        <a href="#project" class="btn btn-dark">View Projects</a>
-        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+  <section id="hero" data-section>
+    <div class="hero">
+      <div class="hero-tag">
+        <div class="tag-dot"></div>
+        Backend Developer · Johannesburg, South Africa
       </div>
-      <div class="hero-scroll">
+ 
+      <h1 class="hero-name">
+        Tebogo<br>
+        <span class="glow-text">Mofokeng</span>
+      </h1>
+ 
+      <p class="hero-role">
+        <span class="accent">Java</span> · Spring Boot ·
+        <span class="accent">Oracle OCI</span> · REST APIs · Docker
+      </p>
+ 
+      <p class="hero-desc">
+        BSc Honours graduate in Computer Science building production-grade backend systems.
+        Four Oracle Cloud Infrastructure certifications. Clean architecture, secure APIs, real delivery.
+      </p>
+ 
+      <div class="hero-ctas">
+        <a href="#project" class="btn btn-primary">View Projects →</a>
+        <a href="https://github.com/Mosotho888" target="_blank" rel="noopener" class="btn btn-glass">GitHub ↗</a>
+        <a href="#contact" class="btn btn-glass">Contact me</a>
+      </div>
+ 
+      <div class="hero-scroll-hint">
         <div class="scroll-line"></div>
         Scroll to explore
       </div>
     </div>
+  </section>
  
-    <div class="hero-right">
-      <p class="hero-desc">
-        BSc Honours graduate in Computer Science building production-grade backend systems.
-        Four Oracle OCI certifications - DevOps Pro, Developer Pro, Architect Associate, and Foundations.
-        Clean code, solid architecture, real delivery.
-      </p>
-      <div class="hero-stats">
-        <div class="hstat"><div class="hstat-n">4</div><div class="hstat-l">OCI Certifications</div></div>
-        <div class="hstat"><div class="hstat-n">137+</div><div class="hstat-l">Commits Shipped</div></div>
-        <div class="hstat"><div class="hstat-n">20+</div><div class="hstat-l">REST Endpoints</div></div>
-        <div class="hstat"><div class="hstat-n">3yr</div><div class="hstat-l">Enterprise Experience</div></div>
+  <!-- ── STATS BAR ── -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat">
+        <span class="stat-n" data-target="4" data-suffix="">4</span>
+        <span class="stat-l">Oracle OCI Certifications</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n" data-target="137" data-suffix="+">137+</span>
+        <span class="stat-l">Commits Shipped</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n" data-target="20" data-suffix="+">20+</span>
+        <span class="stat-l">REST Endpoints Built</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n" data-target="3" data-suffix="yr">3yr</span>
+        <span class="stat-l">Enterprise IT Experience</span>
       </div>
     </div>
   </div>
  
   <!-- ── CERTIFICATIONS ── -->
-  <section class="certs" id="certs">
-    <div class="s-inner">
-      <div class="s-label reveal"><span></span>02 / Certifications</div>
-      <h2 class="s-title reveal">Oracle Cloud <em>Infrastructure</em></h2>
-      <div class="cert-grid reveal">
+  <section class="section" id="certs" data-section>
+    <div class="s-wrap">
+      <div class="s-header reveal">
+        <div class="s-eyebrow">02 / Certifications</div>
+        <h2 class="s-title">Oracle Cloud <em>Infrastructure</em></h2>
+      </div>
  
-        <div class="cert-card">
-          <span class="cert-level lvl-pro">● Professional</span>
-          <p class="cert-name">OCI 2025 Certified DevOps Professional</p>
-          <p class="cert-meta">Oracle University · Oct 2025</p>
-          <p class="cert-valid">✓ Valid until Oct 2027</p>
-          <div class="oracle-word">Dev<br>Ops</div>
+      <div class="cert-bento reveal">
+ 
+        <!-- Featured: DevOps Pro -->
+        <div class="cert-card featured">
+          <div>
+            <span class="cert-level-tag pro">Professional</span>
+            <p class="cert-name">OCI 2025 Certified DevOps Professional</p>
+            <p class="cert-meta">Oracle University · October 2025</p>
+            <p class="cert-valid">✓ Valid until October 2027</p>
+          </div>
+          <div class="cert-oracle-badge">Dev<br>Ops</div>
         </div>
  
+        <!-- Developer Pro -->
         <div class="cert-card">
-          <span class="cert-level lvl-pro">● Professional</span>
+          <span class="cert-level-tag pro">Professional</span>
           <p class="cert-name">OCI 2025 Certified Developer Professional</p>
-          <p class="cert-meta">Oracle University · Oct 2025</p>
-          <p class="cert-valid">✓ Valid until Oct 2027</p>
-          <div class="oracle-word">Dev</div>
+          <p class="cert-meta">Oracle University · October 2025</p>
+          <p class="cert-valid">✓ Valid until October 2027</p>
         </div>
  
+        <!-- Architect -->
         <div class="cert-card">
-          <span class="cert-level lvl-assoc">◎ Associate</span>
+          <span class="cert-level-tag assoc">Associate</span>
           <p class="cert-name">OCI 2025 Certified Architect Associate</p>
-          <p class="cert-meta">Oracle University · Sep 2025</p>
-          <p class="cert-valid">✓ Valid until Sep 2027</p>
-          <div class="oracle-word">Arch</div>
+          <p class="cert-meta">Oracle University · September 2025</p>
+          <p class="cert-valid">✓ Valid until September 2027</p>
         </div>
  
+        <!-- Foundations -->
         <div class="cert-card">
-          <span class="cert-level lvl-assoc">◎ Associate</span>
+          <span class="cert-level-tag assoc">Associate</span>
           <p class="cert-name">OCI 2025 Certified Foundations Associate</p>
-          <p class="cert-meta">Oracle University · Jul 2025</p>
-          <p class="cert-valid">✓ Valid until Jul 2027</p>
-          <div class="oracle-word">Cloud</div>
+          <p class="cert-meta">Oracle University · July 2025</p>
+          <p class="cert-valid">✓ Valid until July 2027</p>
         </div>
  
       </div>
     </div>
   </section>
+ 
+  <div class="divider"></div>
  
   <!-- ── STACK ── -->
-  <section class="stack" id="stack">
-    <div class="s-inner">
-      <div class="s-label reveal"><span></span>03 / Tech Stack</div>
-      <h2 class="s-title reveal">What I <em>build with</em></h2>
+  <section class="section" id="stack" data-section>
+    <div class="s-wrap">
+      <div class="s-header reveal">
+        <div class="s-eyebrow">03 / Tech Stack</div>
+        <h2 class="s-title">What I <em>build with</em></h2>
+      </div>
       <div class="stack-grid">
  
-        <div class="reveal">
-          <p class="stack-col-title">Languages</p>
-          <div class="tag-wrap">
-            <span class="tag primary">Java</span>
-            <span class="tag">Python</span>
-            <span class="tag">C#</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">SQL</span>
-            <span class="tag">HTML / CSS</span>
+        <div class="glass-card stack-card reveal">
+          <div class="stack-icon">☕</div>
+          <p class="stack-label">Languages</p>
+          <div class="tag-cloud">
+            <span class="chip hi">Java</span>
+            <span class="chip">Python</span>
+            <span class="chip">C#</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">SQL</span>
+            <span class="chip">HTML / CSS</span>
           </div>
         </div>
  
-        <div class="reveal reveal-d1">
-          <p class="stack-col-title">Frameworks &amp; Libraries</p>
-          <div class="tag-wrap">
-            <span class="tag primary">Spring Boot</span>
-            <span class="tag">Spring Security</span>
-            <span class="tag">Hibernate / JPA</span>
-            <span class="tag">ASP.NET</span>
+        <div class="glass-card stack-card reveal d1">
+          <div class="stack-icon">🌿</div>
+          <p class="stack-label">Frameworks</p>
+          <div class="tag-cloud">
+            <span class="chip hi">Spring Boot</span>
+            <span class="chip">Spring Security</span>
+            <span class="chip">Hibernate / JPA</span>
+            <span class="chip">ASP.NET</span>
           </div>
         </div>
  
-        <div class="reveal reveal-d2">
-          <p class="stack-col-title">Cloud &amp; DevOps</p>
-          <div class="tag-wrap">
-            <span class="tag primary">Oracle OCI</span>
-            <span class="tag">Docker</span>
-            <span class="tag">CI / CD</span>
-            <span class="tag">OCI Functions</span>
-            <span class="tag">API Gateway</span>
+        <div class="glass-card stack-card reveal d2">
+          <div class="stack-icon">☁️</div>
+          <p class="stack-label">Cloud and DevOps</p>
+          <div class="tag-cloud">
+            <span class="chip hi">Oracle OCI</span>
+            <span class="chip">Docker</span>
+            <span class="chip">CI / CD</span>
+            <span class="chip">OCI Functions</span>
+            <span class="chip">API Gateway</span>
           </div>
         </div>
  
-        <div class="reveal">
-          <p class="stack-col-title">Databases</p>
-          <div class="tag-wrap">
-            <span class="tag primary">PostgreSQL</span>
-            <span class="tag">MySQL</span>
-            <span class="tag">MongoDB</span>
+        <div class="glass-card stack-card reveal">
+          <div class="stack-icon">🗄️</div>
+          <p class="stack-label">Databases</p>
+          <div class="tag-cloud">
+            <span class="chip hi">PostgreSQL</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">MongoDB</span>
           </div>
         </div>
  
-        <div class="reveal reveal-d1">
-          <p class="stack-col-title">Testing &amp; Documentation</p>
-          <div class="tag-wrap">
-            <span class="tag">JUnit</span>
-            <span class="tag">TDD</span>
-            <span class="tag">Swagger</span>
-            <span class="tag">Postman</span>
+        <div class="glass-card stack-card reveal d1">
+          <div class="stack-icon">🧪</div>
+          <p class="stack-label">Testing and Docs</p>
+          <div class="tag-cloud">
+            <span class="chip">JUnit</span>
+            <span class="chip">TDD</span>
+            <span class="chip">Swagger</span>
+            <span class="chip">Postman</span>
           </div>
         </div>
  
-        <div class="reveal reveal-d2">
-          <p class="stack-col-title">Methods &amp; Tools</p>
-          <div class="tag-wrap">
-            <span class="tag">Git</span>
-            <span class="tag">Maven</span>
-            <span class="tag">RabbitMQ</span>
-            <span class="tag">Agile / Scrum</span>
-            <span class="tag">Kanban</span>
-            <span class="tag">SOLID</span>
+        <div class="glass-card stack-card reveal d2">
+          <div class="stack-icon">⚙️</div>
+          <p class="stack-label">Methods and Tools</p>
+          <div class="tag-cloud">
+            <span class="chip">Git</span>
+            <span class="chip">Maven</span>
+            <span class="chip">RabbitMQ</span>
+            <span class="chip">Agile / Scrum</span>
+            <span class="chip">Kanban</span>
+            <span class="chip">SOLID</span>
           </div>
         </div>
  
@@ -185,105 +237,103 @@
     </div>
   </section>
  
+  <div class="divider"></div>
+ 
   <!-- ── PROJECT ── -->
-  <section class="project" id="project">
-    <div class="s-inner">
-      <div class="s-label reveal"><span></span>04 / Projects</div>
-      <h2 class="s-title reveal">Featured <em>work</em></h2>
+  <section class="section" id="project" data-section>
+    <div class="s-wrap">
+      <div class="s-header reveal">
+        <div class="s-eyebrow">04 / Projects</div>
+        <h2 class="s-title">Featured <em>work</em></h2>
+      </div>
  
       <div class="proj-card reveal">
-        <div class="proj-head">
+        <div class="proj-header">
           <div>
             <p class="proj-label">Personal Project · 2024 - Present</p>
             <h3 class="proj-name">GovHelp Desk</h3>
             <p class="proj-sub">IT Helpdesk &amp; Ticketing System REST API</p>
           </div>
           <a href="https://github.com/Mosotho888/GovHelp_Desk" target="_blank" rel="noopener"
-             class="btn btn-ghost" style="font-size:12px;padding:12px 22px;white-space:nowrap">
+             class="btn btn-glass" style="font-size:12px; padding:11px 22px; white-space:nowrap;">
             View on GitHub ↗
           </a>
         </div>
  
         <div class="proj-body">
           <div class="proj-features">
-            <p class="proj-features-title">What was built</p>
-            <ul class="feat-list">
-              <li class="feat-item"><span class="feat-arrow">→</span>JWT authentication and role-based access control with Spring Security</li>
-              <li class="feat-item"><span class="feat-arrow">→</span>Asynchronous message-driven architecture via RabbitMQ</li>
-              <li class="feat-item"><span class="feat-arrow">→</span>20+ RESTful endpoints fully documented with Swagger</li>
-              <li class="feat-item"><span class="feat-arrow">→</span>CI/CD-ready containerised infrastructure with Docker Compose</li>
-              <li class="feat-item"><span class="feat-arrow">→</span>Email notification system for ticket lifecycle events</li>
-              <li class="feat-item"><span class="feat-arrow">→</span>End-to-end solo delivery via Kanban — 137+ commits</li>
-            </ul>
+            <p class="feat-title">What was built</p>
+            <div class="feat"><span class="feat-arrow">→</span>JWT authentication &amp; role-based access control with Spring Security</div>
+            <div class="feat"><span class="feat-arrow">→</span>Asynchronous message-driven architecture via RabbitMQ</div>
+            <div class="feat"><span class="feat-arrow">→</span>20+ RESTful endpoints fully documented with Swagger</div>
+            <div class="feat"><span class="feat-arrow">→</span>CI/CD-ready containerised infrastructure with Docker Compose</div>
+            <div class="feat"><span class="feat-arrow">→</span>Email notification system for ticket lifecycle events</div>
+            <div class="feat"><span class="feat-arrow">→</span>End-to-end solo delivery via Kanban - 137+ commits</div>
           </div>
  
           <div class="proj-side">
             <p class="proj-side-title">Technologies</p>
-            <div class="proj-tech-tags">
-              <span class="proj-tag">Java</span>
-              <span class="proj-tag">Spring Boot</span>
-              <span class="proj-tag">PostgreSQL</span>
-              <span class="proj-tag">RabbitMQ</span>
-              <span class="proj-tag">Docker</span>
-              <span class="proj-tag">JWT</span>
-              <span class="proj-tag">RBAC</span>
-              <span class="proj-tag">Swagger</span>
+            <div class="proj-chips">
+              <span class="proj-chip">Java</span>
+              <span class="proj-chip">Spring Boot</span>
+              <span class="proj-chip">PostgreSQL</span>
+              <span class="proj-chip">RabbitMQ</span>
+              <span class="proj-chip">Docker</span>
+              <span class="proj-chip">JWT</span>
+              <span class="proj-chip">RBAC</span>
+              <span class="proj-chip">Swagger</span>
             </div>
             <p class="proj-side-title">Metrics</p>
-            <div class="proj-counter">
-              <div class="proj-count-box"><span class="proj-count-n">137+</span><span class="proj-count-l">Commits</span></div>
-              <div class="proj-count-box"><span class="proj-count-n">20+</span><span class="proj-count-l">Endpoints</span></div>
+            <div class="proj-metrics">
+              <div class="metric-box"><span class="metric-n">137+</span><span class="metric-l">Commits</span></div>
+              <div class="metric-box"><span class="metric-n">20+</span><span class="metric-l">Endpoints</span></div>
             </div>
           </div>
         </div>
  
-        <div class="proj-foot">
+        <div class="proj-footer">
           <div class="lang-row">
-            <span class="lang-dot"><span class="ldot" style="background:#f89820"></span>Java</span>
-            <span class="lang-dot"><span class="ldot" style="background:#6db33f"></span>Spring Boot</span>
-            <span class="lang-dot"><span class="ldot" style="background:#336791"></span>PostgreSQL</span>
-            <span class="lang-dot"><span class="ldot" style="background:#ff6600"></span>RabbitMQ</span>
-            <span class="lang-dot"><span class="ldot" style="background:#2496ed"></span>Docker</span>
+            <span class="ldot-item"><span class="ldot" style="background:#f89820"></span>Java</span>
+            <span class="ldot-item"><span class="ldot" style="background:#6db33f"></span>Spring Boot</span>
+            <span class="ldot-item"><span class="ldot" style="background:#336791"></span>PostgreSQL</span>
+            <span class="ldot-item"><span class="ldot" style="background:#ff6600"></span>RabbitMQ</span>
+            <span class="ldot-item"><span class="ldot" style="background:#2496ed"></span>Docker</span>
           </div>
-          <span style="font-family:var(--mono);font-size:11px;color:var(--ink3)">MIT License</span>
+          <span style="font-family:var(--mono); font-size:11px; color:var(--text3);">MIT License</span>
         </div>
       </div>
     </div>
   </section>
  
+  <div class="divider"></div>
+ 
   <!-- ── EDUCATION ── -->
-  <section class="education" id="education">
-    <div class="s-inner">
-      <div class="s-label reveal"><span></span>05 / Education</div>
-      <h2 class="s-title reveal">Academic <em>background</em></h2>
+  <section class="section" id="education" data-section>
+    <div class="s-wrap">
+      <div class="s-header reveal">
+        <div class="s-eyebrow">05 / Education</div>
+        <h2 class="s-title">Academic <em>background</em></h2>
+      </div>
       <div class="edu-grid">
  
-        <div class="edu-card reveal">
-          <div class="edu-head">
-            <p class="edu-degree">BSc Honours - Computer Science &amp; Information Technology</p>
-            <p class="edu-school">North-West University · Vanderbijlpark · 2023</p>
-          </div>
-          <div class="edu-body">
-            <div class="grade-row"><span class="grade-mod">Artificial Intelligence I</span><span class="grade-val gd">79% Distinction</span></div>
-            <div class="grade-row"><span class="grade-mod">Artificial Intelligence II</span><span class="grade-val gd">84% Distinction</span></div>
-            <div class="grade-row"><span class="grade-mod">Research Report (CNN · TensorFlow)</span><span class="grade-val gd">70%</span></div>
-            <div class="grade-row"><span class="grade-mod">Information Systems Engineering II</span><span class="grade-val gp">72%</span></div>
-            <div class="grade-row"><span class="grade-mod">Databases I &amp; II</span><span class="grade-val gp">56 – 65%</span></div>
-          </div>
+        <div class="glass-card edu-card reveal">
+          <p class="edu-deg">BSc Honours - Computer Science &amp; Information Technology</p>
+          <p class="edu-uni">North-West University · Vanderbijlpark · 2023</p>
+          <div class="grade"><span class="grade-mod">Artificial Intelligence I</span><span class="grade-val gd">79% Distinction</span></div>
+          <div class="grade"><span class="grade-mod">Artificial Intelligence II</span><span class="grade-val gd">84% Distinction</span></div>
+          <div class="grade"><span class="grade-mod">Research Report (CNN · TensorFlow)</span><span class="grade-val gd">70%</span></div>
+          <div class="grade"><span class="grade-mod">Info Systems Engineering II</span><span class="grade-val gp">72%</span></div>
+          <div class="grade"><span class="grade-mod">Databases I &amp; II</span><span class="grade-val gp">56–65%</span></div>
         </div>
  
-        <div class="edu-card reveal reveal-d1">
-          <div class="edu-head">
-            <p class="edu-degree">BSc - Information Technology</p>
-            <p class="edu-school">North-West University · Vanderbijlpark · 2020 – 2022</p>
-          </div>
-          <div class="edu-body">
-            <div class="grade-row"><span class="grade-mod">Object-Oriented Programming</span><span class="grade-val gd">93% Distinction</span></div>
-            <div class="grade-row"><span class="grade-mod">Structured Programming</span><span class="grade-val gd">87% Distinction</span></div>
-            <div class="grade-row"><span class="grade-mod">UI Programming</span><span class="grade-val gd">83% Distinction</span></div>
-            <div class="grade-row"><span class="grade-mod">Data Analytics II</span><span class="grade-val gd">76% Distinction</span></div>
-            <div class="grade-row"><span class="grade-mod">Computer Networks</span><span class="grade-val gp">71%</span></div>
-          </div>
+        <div class="glass-card edu-card reveal d1">
+          <p class="edu-deg">BSc - Information Technology</p>
+          <p class="edu-uni">North-West University · Vanderbijlpark · 2020–2022</p>
+          <div class="grade"><span class="grade-mod">Object-Oriented Programming</span><span class="grade-val gd">93% Distinction</span></div>
+          <div class="grade"><span class="grade-mod">Structured Programming</span><span class="grade-val gd">87% Distinction</span></div>
+          <div class="grade"><span class="grade-mod">UI Programming</span><span class="grade-val gd">83% Distinction</span></div>
+          <div class="grade"><span class="grade-mod">Data Analytics II</span><span class="grade-val gd">76% Distinction</span></div>
+          <div class="grade"><span class="grade-mod">Computer Networks</span><span class="grade-val gp">71%</span></div>
         </div>
  
       </div>
@@ -291,49 +341,55 @@
   </section>
  
   <!-- ── EXPERIENCE ── -->
-  <section class="experience">
-    <div class="s-inner">
-      <div class="s-label reveal"><span></span>05b / Experience</div>
-      <h2 class="s-title reveal">Work <em>history</em></h2>
-      <div class="exp-card reveal">
+  <section class="section">
+    <div class="s-wrap">
+      <div class="s-header reveal">
+        <div class="s-eyebrow">05b / Experience</div>
+        <h2 class="s-title">Work <em>history</em></h2>
+      </div>
+      <div class="glass-card exp-card reveal">
         <div>
           <p class="exp-role">IT Support Intern</p>
-          <p class="exp-company">North West Cooperative Governance and Traditional Affairs</p>
-          <ul class="exp-points">
-            <li class="exp-p">Diagnosed and resolved hardware, software, and network issues across a large-scale enterprise environment</li>
-            <li class="exp-p">Maintained reliable access to critical systems - accountability and professional delivery at scale</li>
-            <li class="exp-p">Collaborated within structured technical frameworks alongside senior IT professionals</li>
-          </ul>
+          <p class="exp-co">North West Cooperative Governance and Traditional Affairs</p>
+          <div class="exp-item">Diagnosed and resolved hardware, software, and network issues across a large-scale enterprise environment</div>
+          <div class="exp-item">Maintained reliable access to critical systems - accountability and professional delivery at scale</div>
+          <div class="exp-item">Collaborated within structured technical frameworks alongside senior IT professionals</div>
         </div>
         <div class="exp-date">
           Jul 2023 – Jun 2026
-          <span class="exp-duration">3 years</span>
+          <span class="exp-badge">3 years</span>
         </div>
       </div>
     </div>
   </section>
  
+  <div class="divider"></div>
+ 
   <!-- ── CONTACT ── -->
-  <section class="contact" id="contact">
-    <div class="contact-inner">
-      <div class="contact-sup reveal"><span></span>06 / Contact<span></span></div>
-      <h2 class="contact-title reveal">Let's <em>build</em><br>together</h2>
-      <p class="contact-sub reveal">Open to backend, cloud &amp; platform engineering roles in South Africa</p>
-      <div class="contact-grid reveal">
-        <a href="mailto:tebohogivenmofokeng@gmail.com" class="contact-tile">
-          <span class="contact-tile-icon">✉</span>
-          <p class="contact-tile-label">Email</p>
-          <p class="contact-tile-val">tebohogivenmofokeng@gmail.com</p>
+  <section class="section" id="contact" data-section>
+    <div class="contact-wrap">
+      <div class="reveal">
+        <h2 class="contact-title">
+          <span class="line1">Let's build</span>
+          <span class="line2">together.</span>
+        </h2>
+        <p class="contact-sub">Open to backend, cloud &amp; platform engineering roles in South Africa</p>
+      </div>
+      <div class="contact-tiles reveal d1">
+        <a href="mailto:tebohogivenmofokeng@gmail.com" class="c-tile">
+          <span class="c-icon">✉</span>
+          <p class="c-label">Email</p>
+          <p class="c-val">tebohogivenmofokeng@gmail.com</p>
         </a>
-        <a href="https://linkedin.com/in/tebohogivenmofokeng" target="_blank" rel="noopener" class="contact-tile">
-          <span class="contact-tile-icon">in</span>
-          <p class="contact-tile-label">LinkedIn</p>
-          <p class="contact-tile-val">tebohogivenmofokeng</p>
+        <a href="https://linkedin.com/in/tebohogivenmofokeng" target="_blank" rel="noopener" class="c-tile">
+          <span class="c-icon">in</span>
+          <p class="c-label">LinkedIn</p>
+          <p class="c-val">tebohogivenmofokeng</p>
         </a>
-        <a href="https://github.com/Mosotho888" target="_blank" rel="noopener" class="contact-tile">
-          <span class="contact-tile-icon">⬡</span>
-          <p class="contact-tile-label">GitHub</p>
-          <p class="contact-tile-val">Mosotho888</p>
+        <a href="https://github.com/Mosotho888" target="_blank" rel="noopener" class="c-tile">
+          <span class="c-icon">⬡</span>
+          <p class="c-label">GitHub</p>
+          <p class="c-val">Mosotho888</p>
         </a>
       </div>
     </div>
@@ -341,11 +397,12 @@
  
   <footer>
     <span>© 2025 Tebogo Given Mofokeng · Johannesburg, South Africa</span>
-    <span>Backend Developer · Java · Spring Boot · Oracle OCI</span>
+    <div class="footer-right">
+      <div class="footer-dot"></div>
+      <span>Available for hire</span>
+    </div>
   </footer>
  
-  <!-- Script -->
   <script src="script.js"></script>
- 
 </body>
 </html>
